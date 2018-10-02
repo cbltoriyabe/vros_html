@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>VROS | Vtuberのためのコミュニティサイト</title>
+<!-- <link rel="stylesheet" href="./VROG_files/flatpickr.min.css">
+    <link rel="stylesheet" href="./VROG_files/drawer.min.css">
+    <link rel="stylesheet" href="./VROG_files/base.css">
+    <link rel="stylesheet" href="./VROG_files/slick.css">
+    <script src="./VROG_files/slick.min.js.ダウンロード"></script> -->
+<link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+</head>
+<body class="drawer drawer--right">
+
+
+<header role="banner">
+
+<div class="headContent">
+<h1><img src="img/logo.png" alt="VROS"></h1>
+
+<form class="headSearch">
+<input type="search" name="example" placeholder="検索ワード" autocomplete="on" required >
+<input type="image" src="img/searchBtn.png" value="検索" class="searchBtn">
+</form>
+
+  <a href="http://192.168.33.10.xip.io:3000/program/registerform"><p class="btn createListBtn">番組登録</p></a>
+  <ul class="userBox">
+  	<li>
+    <img src="http://192.168.33.10.xip.io:3000/program/registerform" alt="">
+    <a href="http://192.168.33.10.xip.io:3000/login/userview"><p>UserName</p></a>
+    <ul class="userMenu">
+      <li><a href="">ログアウト</a></li>
+  </ul>
+  </li>
+  </ul>
+</div>
+
+<div class="alert alert-success">ログアウトしました</div>
+<div class="alert alert-fail">失敗しました</div>
+<div class="alert alert-closed">この番組は非公開です　<a href="">編集する</a></div>
+
+<!-- sp Menu -->
+<!-- ハンバーガー -->
+<button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+</button>
+<!-- /ハンバーガー -->
+<nav class="drawer-nav" role="navigation">
+<div class="userBox">
+    <img src="http://192.168.33.10.xip.io:3000/program/registerform" alt="">
+    <a href="http://192.168.33.10.xip.io:3000/login/userview"><p>UserName</p></a>
+</div>
+
+<form class="headSearchSp">
+<input type="search" name="example" placeholder="検索ワード" autocomplete="on" required >
+<input type="image" src="img/searchBtn.png" value="検索" class="searchBtn">
+</form>
+
+<a href="http://192.168.33.10.xip.io:3000/program/registerform"><p class="btn createListBtn">番組登録</p></a>
+
+<p class="logout"><a href="">ログアウト</a></p>
+
+</nav>
+<!-- end sp Menu -->
+
+</header>
+
+<div class="wrap">
+
+<div class="cont top">
+
+
+<div class="topSlide">
+	<img src="https://picsum.photos/1000/430?image=1025" alt="">
+	<img src="https://picsum.photos/1000/430?image=855" alt="">
+</div>
+
+<div class="dateContent">
+
+<div class="dateSlide" data-wrap="true" data-clickOpens="false">
+	<a class="input-button" title="toggle" data-toggle>
+	<img src="img/calendar.png" alt="">
+	<span class="ring"></span>
+	</a>
+	<input class="datePick" type="hidden" data-altinput=true data-input>
+
+	<ul class="dateSlideList">
+		<li class="children">00</li>
+		<li class="children">00</li>
+		<li class="children">00</li>
+		<li class="children">00</li>
+		<li class="children">00</li>
+		<li class="children">00</li>
+		<li class="children">00</li>
+	</ul>
+</div>
+
+<div class="settingBtn">
+	<p class="todayBtn"><img src="img/todayBtn.png" alt="ON"></p>
+	<p class="switch"><img src="img/thumbOn.png" alt="ON"></p>
+</div>
+
+</div>
+<!-- end dateContent -->
+
+
+<div class="timelineBox">
+	<div class="timeLineTable">
+		<h2>企業</h2>
+		<ul>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime typeYes">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="timeLineTable">
+		<h2>にじさんじ</h2>
+		<ul>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+<div class="timeLineTable">
+		<h2>VRCHAT</h2>
+		<ul>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+<div class="timeLineTable">
+		<h2>ゲーム</h2>
+		<ul>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+<div class="timeLineTable">
+		<h2>Live27</h2>
+		<ul>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+			<li>
+				<div class="timeLineDate">
+					<p class="startTime">15:00 -</p>
+					<p class="yokiCount">10</p>
+				</div>
+				<div class="timeLineSumb">
+				<img src="https://placehold.jp/250x150.png" alt="">
+				</div>
+				<div class="userName">
+					<img src="https://placehold.jp/50x50.png" alt="">
+					<p>ときのそら</p>
+				</div>
+				<div class="timeLineDatail">
+					<p>【Five Nights at Freddy’s】あん肝の職務放棄と、ときのそらの絶叫放棄【ホラーゲーム実況】</p>
+				</div>
+				<div class="timeLineTag">
+					<p>雑談</p><p>今日は短め</p><p>ゲーム実況</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+<p class="gotoTop"><img src="img/gotoTop@2x.png" alt=""></p>
+<footer>
+<div class="footerContent">
+<p class="copy">All Rights Reserved © VROS</p>
+
+<ul class="contact">
+	<li><a href="https://canbethelight.com/aboutus.html" target="_blank">運営会社</a></li>
+	<li><a href="">プライバシーポリシー</a></li>
+	<li><a href="">利用規約</a></li>
+	<li><a href="">フィードバック・お問い合わせ</a></li>
+</ul>
+<!-- <p class="contact"><a href="">フィードバック・お問い合わせ</a></p> -->
+</div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- gototop -->
+<script>
+	$(function(){
+    $('.gotoTop').click(function () {
+        $("html,body").animate({scrollTop:0},"300");
+    });
+});
+</script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+$('.topSlide').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+
+$('.dateSlideList').slick({
+  slidesToShow: 1,
+  initialSlide: 0,
+  infinite: false,
+  arrows: true,
+});
+
+
+$('.timelineBox').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+      {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+  },
+    {
+      breakpoint: 480,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/l10n/ja.min.js"></script>
+<script>
+const config = {
+defaultDate: 'today',
+dateFormat: 'm月d日(D)',
+onChange: function(selectedDates, dateStr, instance) {
+    let selectedDate = selectedDates[0];
+	var wd = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+    $('.dateSlideList .children').text(function(){
+    var m=selectedDate.getMonth()+1;
+    var d=selectedDate.getDate();
+    var w=wd[selectedDate.getDay()];
+    selectedDate.setDate(selectedDate.getDate()+1);
+    return m+"月"+d+"日"+"("+w+")";
+  });
+    $('.dateSlideList').slick('slickGoTo', 0);
+}
+
+};
+flatpickr('.dateSlide', config);
+</script>
+
+ <script>
+	$(function(){
+  var now = new Date();
+  var wd = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+  $('.dateSlideList .children').text(function(){
+    var m=now.getMonth()+1;
+    var d=now.getDate();
+    var w=wd[now.getDay()];
+    now.setDate(now.getDate()+1);
+    return m+"月"+d+"日"+"("+w+")";
+  });
+});
+</script>
+
+
+<!-- jquery & iScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="drawer.js"></script>
+<script>
+$(document).ready(function() {
+  $('.drawer').drawer();
+});
+</script>
+
+<script>
+$(function(){
+   $('.switch').click(function(){
+   	  $('.timeLineSumb').toggleClass('hide');
+      $('.switch img').toggleClass('hide');
+   });
+});
+</script>
+
+<script>
+	$(".userBox li").hover(function() {
+    $(this).children('ul').not(":animated").fadeIn();
+}, function() {
+    $(this).children('ul').not(":animated").fadeOut();
+});
+</script>
+
+</body>
+</html>

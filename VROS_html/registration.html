@@ -1,0 +1,253 @@
+
+<!-- saved from url=(0053)http://192.168.33.10.xip.io:3000/program/registerform -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VROS | 番組登録/編集</title>
+<!-- <link rel="stylesheet" href="./VROG_files/flatpickr.min.css">
+    <link rel="stylesheet" href="./VROG_files/drawer.min.css">
+    <link rel="stylesheet" href="./VROG_files/base.css">
+    <link rel="stylesheet" href="./VROG_files/slick.css">
+    <script src="./VROG_files/slick.min.js.ダウンロード"></script> -->
+<link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+</head>
+
+<body class="drawer drawer--right">
+
+<header role="banner">
+
+<div class="headContent">
+<h1><img src="img/logo.png" alt="VROS"></h1>
+
+<div class="headSearch">
+<input type="search" name="example" placeholder="検索ワード" autocomplete="on" required >
+<input type="submit" value="検索">
+</div>
+
+  <a href="http://192.168.33.10.xip.io:3000/program/registerform"><p class="btn createListBtn">番組登録</p></a>
+  <div class="userBox">
+    <img src="http://192.168.33.10.xip.io:3000/program/registerform" alt="">
+    <a href="http://192.168.33.10.xip.io:3000/login/userview"><p>UserName</p></a>
+  </div>
+</div>
+
+
+<!-- sp Menu -->
+<nav class="drawer-nav" role="navigation">
+<!-- ハンバーガー -->
+<button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+</button>
+<!-- /ハンバーガー -->
+<div class="userBox">
+    <img src="http://192.168.33.10.xip.io:3000/program/registerform" alt="">
+    <a href="http://192.168.33.10.xip.io:3000/login/userview"><p>UserName</p></a>
+</div>
+
+<div class="headSearch">
+<form method="get" action="input_search.html">
+<input type="search" name="example" placeholder="検索ワード" autocomplete="on" required ><input type="submit" value="検索">
+</form>
+  </div>
+<a href="http://192.168.33.10.xip.io:3000/program/registerform"><p class="btn createListBtn">番組登録</p></a>
+
+</nav>
+<!-- end sp Menu -->
+
+</header>
+
+
+<div class="wrap">
+<div class="cont">
+
+
+<div class="contCreateList">
+<h2 class="main">番組登録/編集</h2>
+
+
+<div class="contCreateListIn">
+
+<p class="txt"><span>●</span>は必須項目です</p>
+<form action="http://192.168.33.10.xip.io:3000/program/registerform" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="k6KV9kD+bhE5rApKLt1l1aezEWlWCqZwqEvp0VCH4rrjOGFPZB9Gs19NOfPQ9ccXkFobV2n9Ue1LtmxNEWSi3A==">
+
+<ul>
+  <li>
+    <h3 class="req">公開設定</h3>
+    <select name="" id="">
+      <option value="公開">公開</option>
+      <option value="非公開">非公開(本人のみ閲覧可)</option></select>
+  </li>
+  <li>
+    <h3 class="req">配信URL</h3>
+    <input type="text" name="prourl">
+    <p class="getBtn">番組情報取得</p>
+  </li>
+  <li>
+    <h3 class="req">タイトル</h3>
+    <input type="text" name="title">
+  </li>
+  <li>
+    <h3 class="req">配信日時</h3>
+    <input class="datePick" type="text" placeholder="配信日時を入力してください">
+  </li>
+  <li>
+    <h3 class="req">開始時間</h3>
+    <input class="timePick" type="text" name="starttime" placeholder="開始時間を入力してください">
+  </li>
+  <li>
+    <h3>配信時間(目安)</h3>
+    <select name="test[g_name]" id="test_g_name">
+      <option value="未定">未定</option>
+      <option value="30分">30分</option></select>
+  </li>
+  <li>
+    <h3>概要</h3>
+    <textarea rows="4" cols="40" name="about"></textarea>
+  </li>
+  <li class="cast">
+    <h3>出演者</h3>
+    <div class="castList">
+      <ul>
+        <li><input type="text" name="member1"></li>
+        <li><input type="text" name="member2"></li>
+        <li><input type="text" name="member3"></li>
+      </ul>
+
+      <p class="plusBtn"><img src="img/plusBtn.png" alt=""></p>
+    </div>
+  </li>
+  <li>
+    <h3 class="req">ジャンル</h3>
+    <select name="test[g_name]" id="test_g_name"><option value="VRChat">VRChat</option></select>
+  </li>
+  <li class="cast">
+    <h3>タグ</h3>
+    <div class="tagBox">
+    <p>「,(カンマ)」でタグを複数入力することができます。</p>
+    <input type="text" name="tags">
+    </div>
+  </li>
+  <li>
+    <h3>サムネイル</h3>
+<div class="fileBox">
+<input type="file" id="file" style="display:none;" onchange="$('#fake_input_file').val($(this).prop('files')[0].name)">
+<p onClick="$('#file').click();" class="btn fileBtn">+ファイル選択</p>
+<input id="fake_input_file" readonly type="text" value=""  onClick="$('#file').click();">
+</div>
+</li>
+<li>
+  <div class="thumbnailBox">
+    <p>登録中のサムネイル</p>
+    <p>サムネイルが登録されていません</p>
+  <img src="https://placehold.jp/1000x450.png" alt="">
+  </div>
+</li>
+  <li>
+    <h3>情報源URL</h3>
+    <input type="text" name="info" placeholder="Twitterの告知URLなど">
+  </li>
+  <li class="cast">
+    <h3 class="req">アーカイブ</h3>
+    <div class="archiveBox">
+      <p>「あり」にしておくと、配信終了後も検索結果として表示されます。</p>
+      <ul class="radioBox">
+      <li><input type="radio" name="archives" value="あり" id="yes" class="checkBoxIn">
+        <label for="yes">あり</label>
+      </li>
+      <li><input type="radio" name="archives" value="なし" id="no" class="checkBoxIn">
+        <label for="no">なし</label>
+      </li>
+      </ul>
+    </div>
+  </li>
+</ul>
+
+  </div>
+
+
+<div class="infoBox">
+  <div class="infoBoxIn">
+<h2>配信元情報</h2>
+<p class="txt">番組を配信するVtuberの公式URLを入力してください。</p>
+<div class="youtubeUrl">
+    <h3 class="req">YouTubeチャンネル URL</h3>
+    <input type="text" name="chaurl" value="">
+    <input type="submit" value="チャンネル情報取得" class="getBtn">
+</div>
+
+<div class="youtubeOwner">
+<img src="" alt="">
+<p>配信者名前</p>
+</div>
+
+</div>
+</div>
+
+
+<a href="http://192.168.33.10.xip.io:3000/top"><input type="submit" value="この内容で登録する" class="btn mainBtn"></a>
+
+<input type="submit" value="上書き保存" class="btn secondBtn">
+
+<input type="submit" value="戻る" class="btn normalBtn">
+
+
+</form>
+</div>
+
+</div>
+</div>
+
+
+<p class="gotoTop"><img src="img/gotoTop@2x.png" alt=""></p>
+<footer>
+  <div class="footerContent">
+<p class="copy">All Rights Reserved © VROS</p>
+<p class="contact">フィードバック・お問い合わせ</p>
+</div>
+</footer>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!--  -->
+
+
+<script>
+      $(function() {
+        $('.plusBtn').click(function() {
+          $('.castList ul').append('<li><input type="text" name=""></li>');
+        });
+      });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr('.datePick', {
+    dateFormat: 'y年m月d日',
+    minDate: 'today'
+  });
+
+  flatpickr('.timePick',{
+    enableTime: true, // タイムピッカーを有効
+    noCalendar: true, // カレンダーを非表示
+    enableSeconds: false, // '秒' を無効
+    time_24hr: true, // 24時間表示
+    dateFormat: "H 時 i 分", // 時間のフォーマット "時:分"
+  }
+  )
+
+</script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.drawer').drawer();
+});
+</script>
+
+</body></html>

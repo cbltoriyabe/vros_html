@@ -1,0 +1,124 @@
+
+<!-- saved from url=(0053)http://192.168.33.10.xip.io:3000/program/registerform -->
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VROS | ログイン</title>
+<!-- <link rel="stylesheet" href="./VROG_files/flatpickr.min.css">
+    <link rel="stylesheet" href="./VROG_files/drawer.min.css">
+    <link rel="stylesheet" href="./VROG_files/base.css">
+    <link rel="stylesheet" href="./VROG_files/slick.css">
+    <script src="./VROG_files/slick.min.js.ダウンロード"></script> -->
+<link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+</head>
+
+<body class="drawer drawer--right">
+
+<header role="banner">
+
+<div class="headContent">
+<h1><img src="img/logo.png" alt="VROS"></h1>
+
+<div class="headSearch">
+<input type="search" name="example" placeholder="検索ワード" autocomplete="on" required >
+<input type="submit" value="検索">
+</div>
+
+  <a href="http://192.168.33.10.xip.io:3000/program/registerform"><p class="btn createListBtn">番組登録</p></a>
+  <div class="userBox">
+    <img src="http://192.168.33.10.xip.io:3000/program/registerform" alt="">
+    <a href="http://192.168.33.10.xip.io:3000/login/userview"><p>UserName</p></a>
+  </div>
+</div>
+
+
+<!-- sp Menu -->
+<nav class="drawer-nav" role="navigation">
+<!-- ハンバーガー -->
+<button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+</button>
+<!-- /ハンバーガー -->
+<div class="userBox">
+    <img src="http://192.168.33.10.xip.io:3000/program/registerform" alt="">
+    <a href="http://192.168.33.10.xip.io:3000/login/userview"><p>UserName</p></a>
+</div>
+
+<div class="headSearch">
+<form method="get" action="input_search.html">
+<input type="search" name="example" placeholder="検索ワード" autocomplete="on" required ><input type="submit" value="検索">
+</form>
+  </div>
+<a href="http://192.168.33.10.xip.io:3000/program/registerform"><p class="btn createListBtn">番組登録</p></a>
+
+</nav>
+<!-- end sp Menu -->
+
+</header>
+
+
+<div class="wrap">
+<div class="cont narrow">
+
+
+<div class="contLoginList">
+<h2 class="main">ログイン</h2>
+
+<ul class="loginBox">
+  <!-- <li class="twitterLogin">twitterでログイン</li> -->
+  <li class="googleLogin">googleでログイン</li>
+</ul>
+
+<p class="txt center"><a href="">今はログインしない</a></p>
+
+<h3 class="center">ログインでできること</h3>
+<p class="center">・VTuberの生放送番組を番組表に登録できるようになります。</p>
+
+
+</div>
+</div>
+
+</div>
+
+
+<footer>
+  <div class="footerContent">
+<p class="copy">All Rights Reserved © VROS</p>
+<p class="contact">フィードバック・お問い合わせ</p>
+</div>
+</footer>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr('.datePick', {
+    dateFormat: 'y年m月d日',
+    minDate: 'today'
+  });
+
+  flatpickr('.timePick',{
+    enableTime: true, // タイムピッカーを有効
+    noCalendar: true, // カレンダーを非表示
+    enableSeconds: false, // '秒' を無効
+    time_24hr: true, // 24時間表示
+    dateFormat: "H 時 i 分", // 時間のフォーマット "時:分"
+  }
+  )
+
+</script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.drawer').drawer();
+});
+</script>
+
+</body></html>
