@@ -483,11 +483,13 @@ header {
         margin-right: .5em; }
 
 .wrap {
+  max-width: 1260px;
   margin: 0 auto;
-  background: url(/img/blueBack.png) no-repeat 0 0;
+  background: url(img/blueBack.png) no-repeat 0 0;
   background-size: contain;
   padding-top: 2em; }
   .wrap .cont {
+    max-width: 1000px;
     margin: 60px auto 0;
     padding-bottom: 3em;
     background: rgba(255, 255, 255, 0.8);
@@ -532,7 +534,7 @@ header {
     position: absolute;
     top: 50%;
     left: 1em;
-    background: url(/img/prev.png) no-repeat;
+    background: url(img/prev.png) no-repeat;
     background-size: contain;
     border: none;
     color: rgba(255, 255, 255, 0);
@@ -544,7 +546,7 @@ header {
     top: 50%;
     right: 1em;
     z-index: 1;
-    background: url(/img/next.png) no-repeat;
+    background: url(img/next.png) no-repeat;
     background-size: contain;
     border: none;
     color: rgba(255, 255, 255, 0);
@@ -569,7 +571,7 @@ header {
     top: 25%;
     left: 1em;
     z-index: 1;
-    background: url(/img/prev_w.png) no-repeat;
+    background: url(img/prev_w.png) no-repeat;
     background-size: contain;
     border: none;
     color: rgba(255, 255, 255, 0); }
@@ -580,7 +582,7 @@ header {
     top: 25%;
     right: 1em;
     z-index: 1;
-    background: url(/img/next_w.png) no-repeat right;
+    background: url(img/next_w.png) no-repeat right;
     background-size: contain;
     border: none;
     color: rgba(255, 255, 255, 0); }
@@ -725,7 +727,7 @@ header {
     .settingBtn .todayBtn:active {
       opacity: .6; }
   .settingBtn .switch {
-    background: url(/img/thumbOff.png) no-repeat;
+    background: url(img/thumbOff.png) no-repeat;
     background-size: contain;
     width: 44px;
     height: 33px;
@@ -749,7 +751,7 @@ header {
     position: absolute;
     top: 10px;
     right: .5em;
-    background: url(/img/next_w.png) no-repeat center;
+    background: url(img/next_w.png) no-repeat center;
     background-size: contain;
     border: none;
     color: rgba(255, 255, 255, 0);
@@ -760,7 +762,7 @@ header {
     top: 10px;
     left: .5em;
     z-index: 1;
-    background: url(/img/prev_w.png) no-repeat center;
+    background: url(img/prev_w.png) no-repeat center;
     background-size: contain;
     border: none;
     color: rgba(255, 255, 255, 0);
@@ -779,7 +781,7 @@ header {
       padding: .5em 0;
       height: 40px; }
     .timelineBox .timeLineTable ul li {
-      background: url(/img/blueLine.png) repeat-y;
+      background: url(img/blueLine.png) repeat-y;
       background-position: 15px 0;
       border-bottom: 1px solid #ccc; }
       .timelineBox .timeLineTable ul li .timeLineSumb {
@@ -800,7 +802,7 @@ header {
           .timelineBox .timeLineTable ul li .timeLineDate .startTime:before {
             content: "";
             display: block;
-            background: url(/img/timelineTimeIcon.png) no-repeat;
+            background: url(img/timelineTimeIcon.png) no-repeat;
             background-size: contain;
             width: 20px;
             height: 20px;
@@ -808,7 +810,7 @@ header {
           .timelineBox .timeLineTable ul li .timeLineDate .startTime.typeYes:before {
             content: "";
             display: block;
-            background: url(/img/archiveTypeYes.png) no-repeat;
+            background: url(img/archiveTypeYes.png) no-repeat;
             background-size: contain;
             width: 20px;
             height: 20px;
@@ -821,7 +823,7 @@ header {
           .timelineBox .timeLineTable ul li .timeLineDate .yokiCount:before {
             display: block;
             content: "";
-            background: url(/img/yokiIcon.png) no-repeat;
+            background: url(img/yokiIcon.png) no-repeat;
             background-size: contain;
             width: 20px;
             height: 20px; }
@@ -934,7 +936,7 @@ footer {
       margin-right: 1em; }
       .contLoginList .loginBox li.twitterLogin:before {
         content: '';
-        background: url(/img/twitterLogin.png) no-repeat;
+        background: url(img/twitterLogin.png) no-repeat;
         background-size: contain;
         width: 45px;
         height: 45px;
@@ -942,7 +944,7 @@ footer {
         margin: 0 1em 0 .4em; }
     .contLoginList .loginBox li.googleLogin:before {
       content: '';
-      background: url(/img/googleLogin.png) no-repeat;
+      background: url(img/googleLogin.png) no-repeat;
       background-size: contain;
       width: 45px;
       height: 45px;
@@ -972,7 +974,7 @@ footer {
       .contDetail .detailBox .categoryBox .archiveType:before {
         content: "";
         display: block;
-        background: url(/img/archiveTypeNo.png) no-repeat;
+        background: url(img/archiveTypeNo.png) no-repeat;
         background-size: contain;
         width: 20px;
         height: 20px;
@@ -980,7 +982,7 @@ footer {
       .contDetail .detailBox .categoryBox .archiveType.typeYes:before {
         content: "";
         display: block;
-        background: url(/img/archiveTypeYes.png) no-repeat;
+        background: url(img/archiveTypeYes.png) no-repeat;
         background-size: contain;
         width: 20px;
         height: 20px;
@@ -1014,7 +1016,7 @@ footer {
 .talkRoom {
   width: 100%;
   min-height: 500px;
-  background: url(/img/backgray.png) no-repeat;
+  background: url(img/backgray.png) no-repeat;
   background-size: 100% 100%; }
   .talkRoom .talkRoomBox {
     max-width: 710px;
@@ -1095,7 +1097,7 @@ footer {
         margin: .5em 0; }
 
 .relativeContent {
-  background: url(/img/backYellow.png) no-repeat;
+  background: url(img/backYellow.png) no-repeat;
   background-size: 100% 100%;
   margin-top: 5em; }
   .relativeContent h2 {
@@ -1374,7 +1376,7 @@ footer {
         .channelTalkRoom .threadBox .category .userCount:before {
           content: "";
           display: block;
-          background: url(/img/userCountIcon.png) no-repeat;
+          background: url(img/userCountIcon.png) no-repeat;
           background-size: contain;
           width: 15px;
           height: 15px;
@@ -1528,7 +1530,7 @@ footer {
       -webkit-appearance: button;
       -moz-appearance: button;
       appearance: button;
-      background: url(/img/arrowDown.png) no-repeat right;
+      background: url(img/arrowDown.png) no-repeat right;
       background-size: 16px 10px; }
     .contCreateList .contCreateListIn ul li select option, .contCreateList .contContactIn ul li select option {
       background-color: #fff;
@@ -1770,7 +1772,7 @@ footer {
 
 @media screen and (max-width: 780px) {
   .wrap {
-    background: url(/img/blueBack_sp.png) no-repeat 0 0;
+    background: url(img/blueBack_sp.png) no-repeat 0 0;
     background-size: contain; }
     .wrap .cont {
       margin-top: 32px !important; }
@@ -1801,7 +1803,7 @@ footer {
       margin-right: .5em;
       margin-left: auto; }
     .thumbSwitch .switch {
-      background: url(/img/switchOff.png) no-repeat;
+      background: url(img/switchOff.png) no-repeat;
       background-size: contain;
       width: 55px;
       height: 24px;
@@ -2011,42 +2013,5 @@ footer {
     height: 4px;
     display: block;
     margin: 1em 0; }
-
-.mypageTab {
-  border-bottom: 2px solid #525AF1;
-  width: 100%;
-  margin-bottom: 2.5em; }
-  .mypageTab ul {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto; }
-    .mypageTab ul li {
-      width: 45%; }
-      .mypageTab ul li.here a {
-        border-radius: 5px 5px 0 0;
-        background: #525AF1;
-        font-weight: bold;
-        color: #fff; }
-      .mypageTab ul li a {
-        display: block;
-        text-align: center;
-        border-top: 2px solid #525AF1;
-        border-left: 2px solid #525AF1;
-        border-right: 2px solid #525AF1;
-        padding: 1.5em 1em;
-        margin: 0 .5em;
-        border-radius: 5px 5px 0 0;
-        transition: .3s; }
-        .mypageTab ul li a:hover {
-          background: #525AF1;
-          color: #fff;
-          font-weight: bold; }
-  @media screen and (max-width: 780px) {
-    .mypageTab ul li {
-      width: 50%; }
-      .mypageTab ul li a {
-        padding: 1em 0;
-        margin: 0 .2em; } }
 
 /*# sourceMappingURL=base.css.map */
